@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksim - Разработчик | Kwork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Maksim</div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Привет, я <span class="highlight">Maksim</span>
+                    </h1>
+                    <p class="hero-subtitle">Профессиональный разработчик на Kwork</p>
+                    <p class="hero-description">
+                        Создаю современные веб-приложения, AI-решения и Telegram-боты. 
+                        Помогаю бизнесу расти с помощью технологий.
+                    </p>
+                    <button class="btn btn-primary" id="contactBtn">Связаться со мной</button>
+                </div>
+                <div class="hero-chat">
+                    <div class="chat-container">
+                        <div class="chat-header">
+                            <div class="chat-avatar">
+                                <div class="avatar-circle">А</div>
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-name">Алексей</div>
+                                <div class="chat-status">
+                                    <span class="status-dot"></span>
+                                    онлайн
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message message-client fade-in-message" data-delay="800">
+                                <div class="message-bubble client-bubble">
+                                    <p class="message-text">Привет! Нужен сайт для компании</p>
+                                </div>
+                                <div class="message-time">12:34</div>
+                            </div>
+                            <div class="message message-developer fade-in-message" data-delay="2200">
+                                <div class="message-bubble developer-bubble">
+                                    <p class="message-text">Привет, Алексей! Расскажите подробнее о проекте</p>
+                                </div>
+                                <div class="message-time">12:35</div>
+                            </div>
+                            <div class="message message-client fade-in-message" data-delay="3800">
+                                <div class="message-bubble client-bubble">
+                                    <p class="message-text">Нужен современный лендинг с формой обратной связи и интеграцией</p>
+                                </div>
+                                <div class="message-time">12:36</div>
+                            </div>
+                            <div class="message message-developer fade-in-message" data-delay="5400">
+                                <div class="message-bubble developer-bubble">
+                                    <p class="message-text">Понял! Сделаю адаптивный дизайн в срок ✨</p>
+                                </div>
+                                <div class="message-time">12:37</div>
+                            </div>
+                            <div class="message message-developer fade-in-message message-file" data-delay="7200">
+                                <div class="message-bubble developer-bubble file-bubble">
+                                    <div class="file-attachment">
+                                        <div class="file-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="currentColor" opacity="0.3"/>
+                                                <path d="M14 2V8H20M14 2L20 8M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8H14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="file-info">
+                                            <div class="file-name">Решение_проекта.zip</div>
+                                            <div class="file-size">2.4 MB</div>
+                                        </div>
+                                        <div class="file-status">
+                                            <div class="file-progress">
+                                                <div class="file-progress-bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message-time">12:45</div>
+                            </div>
+                            <div class="message message-client fade-in-message" data-delay="9200">
+                                <div class="message-bubble client-bubble">
+                                    <p class="message-text">Отлично! Спасибо за работу! 🎉</p>
+                                </div>
+                                <div class="message-time">12:46</div>
+                            </div>
+                            <div class="message message-client fade-in-message" data-delay="10800">
+                                <div class="message-bubble client-bubble client-bubble-success">
+                                    <p class="message-text">Всё сделано идеально! Очень доволен результатом! ⭐⭐⭐⭐⭐</p>
+                                </div>
+                                <div class="message-time">12:47</div>
+                            </div>
+                        </div>
+                        <div class="chat-typing" id="chatTyping">
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Я опытный разработчик, специализирующийся на создании инновационных решений 
+                        для бизнеса. Работаю с современными технологиями и фокусируюсь на качестве 
+                        кода и пользовательском опыте.
+                    </p>
+                    <p>
+                        Моя цель — помочь клиентам достичь их целей через эффективные технологические 
+                        решения. Каждый проект для меня — это возможность создать что-то уникальное 
+                        и полезное.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3 class="skills-title">Направления работы</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🤖</div>
+                            <h4>AI & Machine Learning</h4>
+                            <p>Разработка AI-решений, чат-ботов и автоматизация процессов</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <h4>Веб-сайты</h4>
+                            <p>Современные адаптивные сайты и веб-приложения</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">✈️</div>
+                            <h4>Telegram-боты</h4>
+                            <p>Функциональные боты для автоматизации и взаимодействия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">
+                        <img src="img/photo_2025-11-10_16-19-59.jpg" alt="AI Лендинг">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>AI Лендинг</h3>
+                        <p>Современный лендинг для AI-стартапа с интерактивными элементами</p>
+                        <a href="https://vpc-voennijuristrussia.ru/?ybaip=1&yclid=67867787533484031" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">
+                        <img src="img/photo_2025-11-10_16-13-11.jpg" alt="Telegram Бот">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Telegram Бот</h3>
+                        <p>Многофункциональный бот для автоматизации бизнес-процессов</p>
+                        <a href="https://t.me/vseznayka_stars_bot" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio-card fade-in">
+                    <div class="portfolio-image">
+                        <img src="img/dent.jpg" alt="Сайт компании">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Сайт компании</h3>
+                        <p>Корпоративный сайт с админ-панелью и системой управления контентом</p>
+                        <a href="https://prime-med.ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=prajm_stomatologiya_ryazan_top_702789978&utm_content=17248397280&utm_term=%D1%81%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F&calltouch_tm=yd_c%3A702789978_gb%3A5631015250_ad%3A17248397280_ph%3A55433094993_st%3Asearch_pt%3Aother_p%3A1_s%3Anone_dt%3Adesktop_reg%3A10773_ret%3A55433094993_apt%3Anone&yclid=11310815348113801215" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Посмотреть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Достижения</h2>
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Завершённых проектов</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">5.0</div>
+                    <div class="stat-label">Средний рейтинг</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Года опыта</div>
+                </div>
+            </div>
+            <div class="reviews-list">
+                <div class="review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Отличная работа! Максим создал именно то, что нужно. Быстро, качественно и в срок. 
+                        Рекомендую!"
+                    </p>
+                    <p class="review-author">— Клиент Kwork</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Профессиональный подход к делу. Все требования были учтены, результат превзошёл ожидания."
+                    </p>
+                    <p class="review-author">— Клиент Kwork</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contacts-content">
+                <p class="contacts-description">
+                    Готов обсудить ваш проект и помочь реализовать ваши идеи
+                </p>
+                <div class="contacts-grid">
+                    <a href="https://t.me/cssgoat" class="contact-card" target="_blank">
+                        <div class="contact-icon">✈️</div>
+                        <h3>Telegram</h3>
+                        <p>Написать в Telegram</p>
+                    </a>
+                    <a href="mailto:maxwellsshop0@example.com" class="contact-card" target="_blank">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>maxwellsshop0@gmail.com</p>
+                    </a>
+                    <a href="https://kwork.ru/user/wweb" class="contact-card" target="_blank">
+                        <div class="contact-icon">💼</div>
+                        <h3>Kwork</h3>
+                        <p>Профиль на Kwork</p>
+                    </a>
+                    <a href="https://github.com/puwka" class="contact-card" target="_blank">
+                        <div class="contact-icon">🔗</div>
+                        <h3>GitHub</h3>
+                        <p>Мои проекты</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Maksim. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+
+    <!-- Popup для связи -->
+    <div class="popup" id="contactPopup">
+        <div class="popup-content">
+            <span class="popup-close" id="popupClose">&times;</span>
+            <h2>Свяжитесь со мной</h2>
+            <div class="popup-links">
+                <a href="https://t.me/cssgoat" class="popup-link" target="_blank">
+                    <span class="popup-link-icon">✈️</span>
+                    Telegram
+                </a>
+                <a href="mailto:maxwellsshop0@example.com" class="popup-link" target="_blank">
+                    <span class="popup-link-icon">📧</span>
+                    Email
+                </a>
+                <a href="https://kwork.ru/user/wweb" class="popup-link" target="_blank">
+                    <span class="popup-link-icon">💼</span>
+                    Kwork
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
